@@ -201,8 +201,8 @@ p {
     bottom: 0;
     left:0;
     right:0;
-    width: 80%;
-    max-height: 90%;
+    width: 60%;
+    max-height: 80%;
     margin: 2em auto;
     padding: 1.2em;
     background-color: whitesmoke;
@@ -210,11 +210,11 @@ p {
     box-shadow: 1px 1px 30px 40px lightgray;
 }
 
-.payment{
+.payment {
     display: flex;
     flex-direction: column;
     margin: 1em auto;
-    width: 70%
+    width: 60%
 }
 
 input {
@@ -277,20 +277,47 @@ input {
     }
     
     .payment-form {
-        font-size: 0.9rem;
         margin: 1em auto;
+        width: 80%;
         min-height: 350px;
+        border: 1px solid red;
+    }
+
+    
+    .payment-form h3, .title-elem {
+        font-size: 1.1rem;
+    }
+    
+    input {
+        font-size: 0.9rem;
     }
     
 }
 
-@media screen and (min-width: 420px) {
+@media screen and (min-width: 420px) and (max-width: 550px) {
+
+    .payment-form {
+        margin: 1em auto;
+        max-height: 60%;
+    }
+
+    .payment-form h3, .title-elem {
+        font-size: 1.1rem;
+    }
+    
+    input {
+        font-size: 0.9rem;
+    }
+
+}
+
+@media screen and (min-width: 550px) {
     header{
         background-position: center;
         background-position-y: -120px;
     }
     
-        .add_to_order {
+    .add_to_order {
         max-height: 40px;
         max-width: 40px;
     }

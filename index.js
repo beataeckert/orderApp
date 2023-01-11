@@ -13,7 +13,7 @@ menuArray.forEach((item) => {
                         <p>${item.ingredients}</p>
                         <h4>$${item.price}</h3>
                     </div>
-                    <button class="add_to_order" id="add_to_order" data-add="${item.id}">&#43</button>
+                    <button class="add_to_order" data-add="${item.id}">&#43</button>
                 </div>`
     })
     return feedHtml
@@ -134,7 +134,6 @@ document.addEventListener("submit", (event) => {
   event.preventDefault()
   toggleOrderForm()
   getConfirmation()
-  toggleButtons(false)
 })
 
 /* ----------------- Toggle order form -------------------- */
@@ -152,17 +151,14 @@ document.getElementById("close-btn").addEventListener("click", () => {
 /* ----------------- Toggle buttons -------------------- */
 
 function toggleButtons(bool) {
-  const addBtn = document.querySelector(".add_to_order")
+  const addBtns = document.querySelectorAll(".add_to_order")
   const orderBtn = document.getElementById("complete-order-btn")
+  const isDisabled = bool == true;
 
-  if (bool == true) {
-    addBtn.disabled = true; /* !!!!!!!!! działa tylko dla id=0 - dlaczego? */
-    orderBtn.disabled = true;
-    
-  } else {
-    addBtn.disabled = false;
-    orderBtn.disabled = false;
-  }
+    addBtns.forEach(addBtn => {
+        addBtn.disabled = isDisabled
+    })
+    orderBtn.disabled = isDisabled
 }
 
 
