@@ -1,0 +1,50 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+       <!----------------------------- FONTS ----------------------------------->
+       
+       <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+        
+    </head>
+    <body>
+        <header>
+            <h1>Jimmy's Dinner</h1>
+            <h2>The best burgers and pizzas in town.</h3>
+        </header>
+        <main id="main">
+        
+        <!--------------- Menu section------------------->
+            <section id="first_section"></section>
+            
+            
+        <!--------------- Order section------------------->
+            <section id="order_section"></section>
+            
+            
+        <!--------------- Payment form section -------------------> 
+            <section class="hidden payment-form" id="payment-form">
+                <div class="title-elem">
+                    <button class="close-btn" id="close-btn">X</button>
+                </div>
+                <form class="payment">
+                    <h3>Enter card detail</h3>
+                    <input type="text" placeholder="Enter your name" name="name" id="name" required/>
+                    <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" placeholder="Enter card number" name="number" maxlength = "16" required/>
+                    <input type="number" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)" placeholder="Enter card number" name="number" maxlength = "3" placeholder="Enter CVV" name="cvv" required/>
+                    <button type="submit" id="pay">Pay now</button>
+                </form>
+            </section>
+            
+            
+            <!--------------- Confirmation section------------------->
+            <section id="confirmation"></section>
+        </main>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+
