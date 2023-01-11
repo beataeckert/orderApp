@@ -1,21 +1,7 @@
-# coda541c79bf5a243d981803c
+My new project as a Scrimba.com student.
 
-Quick start:
 
-```
-$ npm install
-$ npm start
-````
+This is the Solo Project of the restaurant ordering App.
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
-
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
-
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
-
-Happy Coding!
+The requirements of project:
+![image](https://user-images.githubusercontent.com/113981752/211860822-62e9f0f2-215a-4c89-ba7d-a351ae03ca61.png)
